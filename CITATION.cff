@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the CourtStyle paper."
+title: "CourtStyle: Unified Self-Supervised Framework for Tennis Playing Style Discovery"
+abstract: >-
+  Reference implementation of CourtStyle, a unified self-supervised framework for
+  discovering recurring serve and rally styles from structured tennis match
+  records and translating the discovered profiles into natural-language
+  descriptions for practitioners.
+type: software
+license: MIT
+authors:
+  - family-names: Jouini
+    given-names: Ahmed
+    affiliation: "EFREI Research Lab, Paris Panthéon-Assas University"
+  - family-names: Chaieb-Chakchouk
+    given-names: Faten
+    affiliation: "EFREI Research Lab, Paris Panthéon-Assas University"
+  - family-names: Loth
+    given-names: Alex
+    affiliation: "French Tennis Federation"
+keywords:
+  - tennis analytics
+  - self-supervised learning
+  - contrastive learning
+  - playing style discovery
+  - large language models
+preferred-citation:
+  type: conference-paper
+  title: "CourtStyle: Unified Self-Supervised Framework for Tennis Playing Style Discovery"
+  authors:
+    - family-names: Jouini
+      given-names: Ahmed
+    - family-names: Chaieb-Chakchouk
+      given-names: Faten
+    - family-names: Loth
+      given-names: Alex
+  collection-title: >-
+    Proceedings of the 30th International Conference on Knowledge-Based and
+    Intelligent Information & Engineering Systems (KES 2026)
+  publisher:
+    name: Elsevier
+  year: 2026
+  notes: >-
+    Scheduled for publication in Procedia Computer Science. Volume, pages and DOI
+    will be added when the final record becomes available.

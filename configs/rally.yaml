@@ -1,0 +1,51 @@
+# Rally branch. Configuration of the run reported in the paper.
+data:
+  train_shots: data/rally/train_processed.csv
+  test_shots: data/rally/test_processed.csv
+  train_outcomes: data/rally/train_outcomes.csv
+  test_outcomes: data/rally/test_outcomes.csv
+  split_info: data/rally/split_info.json   # 19 train / 5 val / 7 test matches
+  token_dim: 93                            # 31 raw columns x {state, action, delta}
+  min_rally_len: 2
+  max_len: 256
+  seed: 42
+
+encoder:
+  encoder_block: vanilla
+  d_model: 256
+  n_layers: 4
+  n_heads: 4
+  dropout: 0.1
+  pooling: cls
+  proj_dim: 128
+
+training:
+  objective: nt_xent
+  temperature: 0.15
+  epochs: 200
+  batch_size: 64
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  grad_clip: 1.0
+  order_loss_lambda: 0.2
+  order_margin: 0.2
+  augmentation:
+    crop_min_ratio: 0.6
+    token_dropout: 0.1
+    feature_mask_prob: 0.05
+    noise_std: 0.01
+    flip_x_prob: 0.5
+    flip_y_prob: 0.5
+    player_swap_prob: 0.0
+
+discovery:
+  method: kmeans                           # K-Means on length-residualised embeddings
+  fixed_k: 4
+  n_init: 20
+  seed: 42
+  stability_runs: 5
+  max_frac: 0.35                           # largest style share allowed by the decision gate
+  min_size: 150                            # smallest style size allowed by the decision gate
+  length_residualize: bin_center
+  length_var: n_transitions
+  resid_l2_normalize: false

@@ -1,0 +1,51 @@
+# Serve branch. Configuration of the run reported in the paper.
+data:
+  raw_records: data/serve/fingerprint_serve.csv   # 1273 x 41
+  synthetic: data/serve/synthetic_serve_50k.csv   # 50000 synthetic records, pre-training only
+  processed_dir: data/serve/processed             # train_data.csv (1018), val_data.csv (255),
+                                                  # synthetic_processed.csv, 29 columns each
+  test_set: data/serve/test_set                   # Australian Open 2017, 42 instances
+  val_fraction: 0.2
+  stratify_on: surface
+  seed: 42
+
+encoder:
+  encoder_block: mhc        # "prenorm" selects the ablation baseline
+  d_model: 128
+  n_heads: 8
+  depth: 4
+  expansion_n: 4
+  ff_multiplier: 4
+  dropout: 0.118
+  proj_dim: 64
+
+training:
+  objective: moco_v3
+  temperature: 0.101
+  optimizer: adamw
+  weight_decay: 1.0e-4
+  momentum: 0.99
+  surface_handling: none    # domain-adversarial training is disabled
+  phase1:                   # pre-training on synthetic records
+    epochs: 100
+    batch_size: 256
+    lr: 1.0e-3
+    mask_prob: 0.30
+  phase2:                   # fine-tuning on real records, surface-balanced sampling
+    epochs: 150
+    batch_size: 128
+    lr: 1.015e-5
+    mask_prob: 0.312
+  augmentation:
+    noise_std: 0.023
+    categorical_mask_prob: 0.183
+  # Checkpoint selection: val_loss + select_rank_weight * (1 - effective_rank / d_model)
+  select_rank_weight: 0.1
+
+discovery:
+  space: encoder
+  knn_k: 15               # symmetrised cosine k-NN graph, Gaussian kernel, sigma = median distance
+  metric: cosine
+  leiden_resolution: 1.0
+  seed: 42
+  stability_runs: 10

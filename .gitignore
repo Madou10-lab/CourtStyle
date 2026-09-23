@@ -1,0 +1,42 @@
+# Data (not redistributable)
+/data/
+/datasets/
+*.csv
+*.xlsx
+!docs/**/*.csv
+
+# Model artefacts and run outputs
+checkpoints/
+outputs/
+runs/
+work_dir/
+logs/
+*.pt
+*.pth
+*.npy
+*.pkl
+
+# Credentials
+.env
+api_key
+*.key
+*.token
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+build/
+dist/
+
+# Environments and editors
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+
+# Experiment tracking
+wandb/
+mlruns/

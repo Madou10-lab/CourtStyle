@@ -1,0 +1,528 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 0 1060 790" width="1060" height="790" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="a" markerWidth="9" markerHeight="6" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6Z" fill="#444"/></marker>
+  <marker id="as" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5Z" fill="#444"/></marker>
+  <marker id="ab" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto"><path d="M0,0 L8,2.5 L0,5Z" fill="#666"/></marker>
+</defs>
+
+<rect x="-6" y="0" width="1066" height="790" fill="#FFF"/>
+
+<!-- ============================================================== -->
+<!-- SHARED TOP BANNER: Pipeline stage labels with arrows            -->
+<!-- y = 6..44                                                       -->
+<!-- ============================================================== -->
+
+<rect x="16" y="6" width="1026" height="38" rx="5" fill="#F8F8FC" stroke="#D0D0E0" stroke-width="0.7"/>
+
+<!-- Stage labels — centered over each column -->
+<!-- Col1 center=104, Col2 center=379, Col3 center=686, Col4 center=938 -->
+<text x="104" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Input</text>
+<text x="379" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#444">SSL Encoder</text>
+<text x="686" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Community Discovery</text>
+<text x="960" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Style Interpretation</text>
+
+<!-- Connecting arrows between labels -->
+<line x1="158" y1="26" x2="296" y2="26" stroke="#666" stroke-width="1.5" marker-end="url(#ab)"/>
+<line x1="464" y1="26" x2="588" y2="26" stroke="#666" stroke-width="1.5" marker-end="url(#ab)"/>
+<line x1="786" y1="26" x2="866" y2="26" stroke="#666" stroke-width="1.5" marker-end="url(#ab)"/>
+
+<!-- ============================================================== -->
+<!-- ROW LABEL: SERVE (left margin)                                  -->
+<!-- ============================================================== -->
+<text x="6" y="310" text-anchor="middle" font-size="12" font-weight="700" fill="#1A1A1A" transform="rotate(-90, 6, 310)">Serve</text>
+
+<!-- ============================================================== -->
+<!-- ROW 1: SERVE TRACK (y offset +28 from original)                 -->
+<!-- Original content: top=30→58, bottom=530→558                     -->
+<!-- All y-coordinates shifted by +28                                -->
+<!-- ============================================================== -->
+
+<!-- ============================================================== -->
+<!-- COLUMN 1: INPUT TENNIS STATISTICS                               -->
+<!-- ============================================================== -->
+
+<text x="104" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">Input Serve</text>
+<text x="104" y="96" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">Statistics</text>
+
+<!-- Table icon -->
+<g transform="translate(44, 108)">
+  <rect x="0" y="0" width="120" height="52" rx="3" fill="#FFF" stroke="#8AAAD0" stroke-width="0.8"/>
+  <line x1="0" y1="16" x2="120" y2="16" stroke="#B0C8E8" stroke-width="0.5"/>
+  <line x1="0" y1="28" x2="120" y2="28" stroke="#B0C8E8" stroke-width="0.4"/>
+  <line x1="0" y1="40" x2="120" y2="40" stroke="#B0C8E8" stroke-width="0.3"/>
+  <line x1="40" y1="0" x2="40" y2="52" stroke="#B0C8E8" stroke-width="0.3"/>
+  <line x1="80" y1="0" x2="80" y2="52" stroke="#B0C8E8" stroke-width="0.3"/>
+  <text x="20" y="11" text-anchor="middle" font-size="8" font-weight="600" fill="#4A6A8A">speed</text>
+  <text x="60" y="11" text-anchor="middle" font-size="8" font-weight="600" fill="#4A6A8A">plcmt</text>
+  <text x="100" y="11" text-anchor="middle" font-size="8" font-weight="600" fill="#4A6A8A">disp</text>
+  <text x="20" y="25" text-anchor="middle" font-size="7.5" fill="#888">187</text>
+  <text x="60" y="25" text-anchor="middle" font-size="7.5" fill="#888">0.42</text>
+  <text x="100" y="25" text-anchor="middle" font-size="7.5" fill="#888">1.8</text>
+  <text x="20" y="37" text-anchor="middle" font-size="7.5" fill="#888">175</text>
+  <text x="60" y="37" text-anchor="middle" font-size="7.5" fill="#888">0.28</text>
+  <text x="100" y="37" text-anchor="middle" font-size="7.5" fill="#888">2.1</text>
+  <text x="20" y="48" text-anchor="middle" font-size="6.5" fill="#AAA">⋯</text>
+  <text x="60" y="48" text-anchor="middle" font-size="6.5" fill="#AAA">⋯</text>
+  <text x="100" y="48" text-anchor="middle" font-size="6.5" fill="#AAA">⋯</text>
+</g>
+
+<!-- x label -->
+<rect x="36" y="170" width="136" height="28" rx="5" fill="#FFF" stroke="#6A8AB0" stroke-width="0.8"/>
+<text x="98" y="190" text-anchor="middle" font-size="15" font-weight="700" fill="#333" font-style="italic">x ∈ ℝ</text>
+<text x="132" y="183" font-size="10" fill="#333" font-style="italic">B×D</text>
+
+<!-- Transition arrow: Input → Encoder -->
+<line x1="166" y1="184" x2="222" y2="184" stroke="#444" stroke-width="2.2" marker-end="url(#a)"/>
+
+<!-- ====== mHC CALLOUT ====== -->
+<rect x="16" y="212" width="176" height="346" rx="5" fill="#F0F8E4" stroke="#7A9A2A" stroke-width="1.2"/>
+<text x="104" y="232" text-anchor="middle" font-size="12" font-weight="700" fill="#3A5A1A">mHC Detail</text>
+
+<g transform="translate(24, 232)">
+  <!-- x_l BOTTOM -->
+  <rect x="54" y="296" width="64" height="14" rx="2.5" fill="#C4C4C4" stroke="#999" stroke-width="0.5"/>
+  <rect x="50" y="292" width="64" height="14" rx="2.5" fill="#CFCFCF" stroke="#999" stroke-width="0.4"/>
+  <rect x="46" y="288" width="64" height="14" rx="2.5" fill="#DADADA" stroke="#999" stroke-width="0.4"/>
+  <rect x="42" y="284" width="64" height="14" rx="2.5" fill="#E8E8E8" stroke="#999" stroke-width="0.5"/>
+  <text x="74" y="295" text-anchor="middle" font-size="12" font-weight="600" fill="#333">x</text>
+  <text x="83" y="299" font-size="8" fill="#333" font-style="italic">l</text>
+
+  <!-- 90° split arrows -->
+  <line x1="74" y1="282" x2="74" y2="268" stroke="#444" stroke-width="1.3"/>
+  <line x1="74" y1="268" x2="36" y2="268" stroke="#444" stroke-width="1.3"/>
+  <line x1="36" y1="268" x2="36" y2="258" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+  <line x1="74" y1="268" x2="118" y2="268" stroke="#444" stroke-width="1.3"/>
+  <line x1="118" y1="268" x2="118" y2="258" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- Res Mapping -->
+  <rect x="2" y="238" width="68" height="20" rx="3.5" fill="#D4E8D0" stroke="#7AAA70" stroke-width="0.9"/>
+  <text x="36" y="252" text-anchor="middle" font-size="10" font-weight="600" fill="#2A6A22">Res Map</text>
+  <line x1="36" y1="236" x2="36" y2="224" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- h_l^res -->
+  <rect x="14" y="210" width="52" height="12" rx="2" fill="#C4C4C4" stroke="#999" stroke-width="0.4"/>
+  <rect x="11" y="206" width="52" height="12" rx="2" fill="#CFCFCF" stroke="#999" stroke-width="0.4"/>
+  <rect x="8" y="202" width="52" height="12" rx="2" fill="#DADADA" stroke="#999" stroke-width="0.4"/>
+  <text x="34" y="213" text-anchor="middle" font-size="9" fill="#333">h</text>
+  <text x="40" y="216" font-size="6" fill="#333" font-style="italic">l</text>
+  <text x="48" y="210" font-size="6.5" fill="#333">res</text>
+  <line x1="36" y1="200" x2="36" y2="144" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- Pre Mapping -->
+  <rect x="84" y="238" width="68" height="20" rx="3.5" fill="#D4E8D0" stroke="#7AAA70" stroke-width="0.9"/>
+  <text x="118" y="252" text-anchor="middle" font-size="10" font-weight="600" fill="#2A6A22">Pre Map</text>
+  <line x1="118" y1="236" x2="118" y2="224" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- h_l^in -->
+  <rect x="96" y="210" width="52" height="12" rx="2" fill="#C4C4C4" stroke="#999" stroke-width="0.4"/>
+  <rect x="93" y="206" width="52" height="12" rx="2" fill="#CFCFCF" stroke="#999" stroke-width="0.4"/>
+  <rect x="90" y="202" width="52" height="12" rx="2" fill="#DADADA" stroke="#999" stroke-width="0.4"/>
+  <text x="116" y="213" text-anchor="middle" font-size="9" fill="#333">h</text>
+  <text x="122" y="216" font-size="6" fill="#333" font-style="italic">l</text>
+  <text x="130" y="210" font-size="6.5" fill="#333">in</text>
+  <line x1="118" y1="200" x2="118" y2="188" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- Layer F -->
+  <rect x="84" y="168" width="68" height="20" rx="3.5" fill="#C8E0F0" stroke="#5A8AB0" stroke-width="1"/>
+  <text x="118" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#1A4A6A">Layer ℱ</text>
+  <line x1="118" y1="166" x2="118" y2="154" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- h_l^out -->
+  <rect x="96" y="140" width="52" height="12" rx="2" fill="#C4C4C4" stroke="#999" stroke-width="0.4"/>
+  <rect x="93" y="136" width="52" height="12" rx="2" fill="#CFCFCF" stroke="#999" stroke-width="0.4"/>
+  <rect x="90" y="132" width="52" height="12" rx="2" fill="#DADADA" stroke="#999" stroke-width="0.4"/>
+  <text x="116" y="143" text-anchor="middle" font-size="9" fill="#333">h</text>
+  <text x="122" y="146" font-size="6" fill="#333" font-style="italic">l</text>
+  <text x="130" y="140" font-size="6.5" fill="#333">out</text>
+  <line x1="118" y1="130" x2="118" y2="118" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- Post Mapping -->
+  <rect x="84" y="98" width="68" height="20" rx="3.5" fill="#D4E8D0" stroke="#7AAA70" stroke-width="0.9"/>
+  <text x="118" y="112" text-anchor="middle" font-size="10" font-weight="600" fill="#2A6A22">Post Map</text>
+  <line x1="118" y1="96" x2="118" y2="84" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- h_l^post -->
+  <rect x="96" y="70" width="52" height="12" rx="2" fill="#C4C4C4" stroke="#999" stroke-width="0.4"/>
+  <rect x="93" y="66" width="52" height="12" rx="2" fill="#CFCFCF" stroke="#999" stroke-width="0.4"/>
+  <rect x="90" y="62" width="52" height="12" rx="2" fill="#DADADA" stroke="#999" stroke-width="0.4"/>
+  <text x="116" y="73" text-anchor="middle" font-size="9" fill="#333">h</text>
+  <text x="122" y="76" font-size="6" fill="#333" font-style="italic">l</text>
+  <text x="130" y="70" font-size="6.5" fill="#333">post</text>
+
+  <!-- BIG LEFT+DOWN path to ⊕ -->
+  <path d="M88,68 L60,68 L60,132 L48,132" fill="none" stroke="#444" stroke-width="1.5" marker-end="url(#as)"/>
+
+  <!-- ⊕ circle -->
+  <circle cx="36" cy="132" r="10" fill="#FFF" stroke="#555" stroke-width="1"/>
+  <text x="36" y="137" text-anchor="middle" font-size="14" fill="#444">⊕</text>
+  <line x1="36" y1="120" x2="36" y2="42" stroke="#444" stroke-width="1.3" marker-end="url(#as)"/>
+
+  <!-- x_{l+1} TOP -->
+  <rect x="14" y="28" width="64" height="14" rx="2.5" fill="#C4C4C4" stroke="#999" stroke-width="0.5"/>
+  <rect x="10" y="24" width="64" height="14" rx="2.5" fill="#CFCFCF" stroke="#999" stroke-width="0.4"/>
+  <rect x="6" y="20" width="64" height="14" rx="2.5" fill="#DADADA" stroke="#999" stroke-width="0.4"/>
+  <rect x="2" y="16" width="64" height="14" rx="2.5" fill="#E8E8E8" stroke="#999" stroke-width="0.5"/>
+  <text x="34" y="27" text-anchor="middle" font-size="12" font-weight="600" fill="#333">x</text>
+  <text x="46" y="31" font-size="8" fill="#333" font-style="italic">l+1</text>
+</g>
+
+<!-- ============================================================== -->
+<!-- COLUMN 2: ENCODER ARCHITECTURE (SERVE)                          -->
+<!-- ============================================================== -->
+
+<rect x="224" y="58" width="310" height="500" rx="6" fill="#F0F4E8" stroke="#B8C898" stroke-width="1"/>
+<text x="379" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">Encoder Architecture</text>
+
+<!-- Token Embedding -->
+<rect x="238" y="118" width="282" height="66" rx="4" fill="#FFF" stroke="#A8B888" stroke-width="0.8"/>
+<text x="379" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#1A1A1A">Token Embedding Layer</text>
+<rect x="250" y="148" width="34" height="22" rx="3" fill="#C5E17A" stroke="#7A9A2A" stroke-width="0.8"/>
+<text x="267" y="163" text-anchor="middle" font-size="10" font-weight="700" fill="#3A5A1A">[CLS]</text>
+<rect x="292" y="148" width="118" height="22" rx="3" fill="#D0DDE8" stroke="#8AA0C0" stroke-width="0.5"/>
+<rect x="297" y="152" width="10" height="14" rx="1.5" fill="#90B0CC"/>
+<rect x="310" y="152" width="10" height="14" rx="1.5" fill="#A0BCD8"/>
+<rect x="323" y="152" width="10" height="14" rx="1.5" fill="#90B0CC"/>
+<rect x="336" y="152" width="10" height="14" rx="1.5" fill="#A0BCD8"/>
+<rect x="349" y="152" width="10" height="14" rx="1.5" fill="#90B0CC"/>
+<rect x="362" y="152" width="10" height="14" rx="1.5" fill="#A0BCD8"/>
+<rect x="375" y="152" width="10" height="14" rx="1.5" fill="#90B0CC"/>
+<rect x="388" y="152" width="10" height="14" rx="1.5" fill="#A0BCD8"/>
+<rect x="418" y="148" width="56" height="22" rx="3" fill="#D4E8D0" stroke="#8AB880" stroke-width="0.5"/>
+<rect x="424" y="152" width="12" height="14" rx="1.5" fill="#A0D098"/>
+<rect x="440" y="152" width="12" height="14" rx="1.5" fill="#88C080"/>
+<rect x="456" y="152" width="12" height="14" rx="1.5" fill="#A0D098"/>
+<circle cx="492" cy="159" r="9" fill="none" stroke="#666" stroke-width="0.7"/>
+<text x="492" y="163" text-anchor="middle" font-size="12" fill="#555">+</text>
+<text x="510" y="157" font-size="7.5" fill="#888">Col.</text>
+<text x="510" y="167" font-size="7.5" fill="#888">IDs</text>
+
+<line x1="379" y1="186" x2="379" y2="192" stroke="#444" stroke-width="1.2" marker-end="url(#a)"/>
+
+<!-- ×4 brace -->
+<path d="M230,192 C222,192 220,200 220,208 L220,300 C220,308 222,314 230,314 C222,314 220,322 220,330 L220,424 C220,432 222,438 230,438" fill="none" stroke="#555" stroke-width="1.1"/>
+<text x="210" y="316" text-anchor="middle" font-size="15" font-weight="700" fill="#444">×4</text>
+
+<!-- SUB-BLOCK: FFN -->
+<rect x="238" y="192" width="282" height="110" rx="4" fill="#FFF" stroke="#A8B888" stroke-width="0.7"/>
+<rect x="252" y="204" width="254" height="18" rx="2" fill="#F8F8F8" stroke="#DDD" stroke-width="0.4"/>
+<text x="379" y="217" text-anchor="middle" font-size="10" fill="#999">Dropout</text>
+<rect x="252" y="228" width="254" height="40" rx="4" fill="#D0DDE8" stroke="#6A8AAA" stroke-width="1"/>
+<text x="379" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#1A3A5A">SwiGLU FFN</text>
+<text x="379" y="264" text-anchor="middle" font-size="11" fill="#4A6A8A">d_ff = 4 × d_model</text>
+<rect x="252" y="276" width="254" height="18" rx="2" fill="#F0F0F0" stroke="#CCC" stroke-width="0.5"/>
+<text x="379" y="289" text-anchor="middle" font-size="11" fill="#555">LayerNorm</text>
+
+<!-- mHC ② -->
+<rect x="524" y="234" width="42" height="30" rx="4" fill="#C5E17A" stroke="#7A9A2A" stroke-width="1"/>
+<text x="545" y="248" text-anchor="middle" font-size="10" font-weight="700" fill="#3A5A1A">mHC</text>
+<text x="545" y="260" text-anchor="middle" font-size="11" font-weight="700" fill="#5A7A2A">②</text>
+<path d="M506,202 L545,202 L545,232" fill="none" stroke="#7A9A2A" stroke-width="1.2"/>
+<path d="M545,266 L545,296 L506,296" fill="none" stroke="#7A9A2A" stroke-width="1.2"/>
+
+<line x1="379" y1="224" x2="379" y2="228" stroke="#444" stroke-width="1" marker-end="url(#a)"/>
+<line x1="379" y1="270" x2="379" y2="276" stroke="#444" stroke-width="1" marker-end="url(#a)"/>
+
+<!-- Arrow between blocks -->
+<line x1="379" y1="304" x2="379" y2="320" stroke="#444" stroke-width="1.2" marker-end="url(#a)"/>
+
+<!-- SUB-BLOCK: ATTENTION -->
+<rect x="238" y="324" width="282" height="114" rx="4" fill="#FFF" stroke="#A8B888" stroke-width="0.7"/>
+<rect x="252" y="336" width="254" height="18" rx="2" fill="#F8F8F8" stroke="#DDD" stroke-width="0.4"/>
+<text x="379" y="349" text-anchor="middle" font-size="10" fill="#999">Dropout</text>
+<rect x="252" y="360" width="254" height="44" rx="4" fill="#D4E8D0" stroke="#7AAA70" stroke-width="1"/>
+<text x="379" y="382" text-anchor="middle" font-size="14" font-weight="700" fill="#1A5A18">Gated Multi-Head Attention</text>
+<text x="379" y="398" text-anchor="middle" font-size="11" fill="#4A8A42">h heads, sigmoid gates</text>
+<rect x="252" y="410" width="254" height="18" rx="2" fill="#F0F0F0" stroke="#CCC" stroke-width="0.5"/>
+<text x="379" y="423" text-anchor="middle" font-size="11" fill="#555">LayerNorm</text>
+
+<!-- mHC ① -->
+<rect x="524" y="368" width="42" height="30" rx="4" fill="#C5E17A" stroke="#7A9A2A" stroke-width="1"/>
+<text x="545" y="382" text-anchor="middle" font-size="10" font-weight="700" fill="#3A5A1A">mHC</text>
+<text x="545" y="394" text-anchor="middle" font-size="11" font-weight="700" fill="#5A7A2A">①</text>
+<path d="M506,334 L545,334 L545,366" fill="none" stroke="#7A9A2A" stroke-width="1.2"/>
+<path d="M545,400 L545,430 L506,430" fill="none" stroke="#7A9A2A" stroke-width="1.2"/>
+
+<line x1="379" y1="356" x2="379" y2="360" stroke="#444" stroke-width="1" marker-end="url(#a)"/>
+<line x1="379" y1="406" x2="379" y2="410" stroke="#444" stroke-width="1" marker-end="url(#a)"/>
+
+<!-- Final LayerNorm -->
+<line x1="379" y1="440" x2="379" y2="454" stroke="#444" stroke-width="1.2" marker-end="url(#a)"/>
+<rect x="300" y="458" width="158" height="20" rx="3" fill="#F0F0F0" stroke="#CCC" stroke-width="0.6"/>
+<text x="379" y="472" text-anchor="middle" font-size="11" fill="#555">LayerNorm (final)</text>
+
+<!-- z output -->
+<line x1="379" y1="480" x2="379" y2="496" stroke="#444" stroke-width="1.2" marker-end="url(#a)"/>
+<rect x="328" y="500" width="102" height="28" rx="5" fill="#FFF" stroke="#888" stroke-width="0.8"/>
+<text x="379" y="519" text-anchor="middle" font-size="15" font-weight="700" fill="#333" font-style="italic">z ∈ ℝ¹²⁸</text>
+
+<!-- Transition: Encoder → Community (serve) -->
+<line x1="536" y1="328" x2="570" y2="328" stroke="#444" stroke-width="2.2" marker-end="url(#a)"/>
+
+<!-- ============================================================== -->
+<!-- COLUMN 3: COMMUNITY DISCOVERY (SERVE)                           -->
+<!-- ============================================================== -->
+
+<rect x="572" y="58" width="228" height="500" rx="6" fill="#F3E5F5" stroke="#C8A8D8" stroke-width="1"/>
+<text x="686" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">Community Discovery</text>
+
+<!-- KNN Graph -->
+<rect x="584" y="128" width="204" height="80" rx="5" fill="#FFF" stroke="#A080C0" stroke-width="0.9"/>
+<g transform="translate(590, 136)">
+  <circle cx="6" cy="6" r="4" fill="#D0B8E0" stroke="#8868A8" stroke-width="0.6"/>
+  <circle cx="24" cy="3" r="4" fill="#D0B8E0" stroke="#8868A8" stroke-width="0.6"/>
+  <circle cx="18" cy="20" r="4" fill="#D0B8E0" stroke="#8868A8" stroke-width="0.6"/>
+  <circle cx="38" cy="12" r="4" fill="#D0B8E0" stroke="#8868A8" stroke-width="0.6"/>
+  <line x1="10" y1="6" x2="20" y2="4" stroke="#9070B0" stroke-width="1.2" opacity="0.8"/>
+  <line x1="9" y1="10" x2="15" y2="17" stroke="#9070B0" stroke-width="0.7" opacity="0.4"/>
+  <line x1="26" y1="6" x2="24" y2="16" stroke="#9070B0" stroke-width="1.0" opacity="0.6"/>
+  <line x1="28" y1="4" x2="34" y2="10" stroke="#9070B0" stroke-width="0.8" opacity="0.5"/>
+</g>
+<text x="686" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#3A1868">Cosine k-NN Graph</text>
+<text x="686" y="190" text-anchor="middle" font-size="11" fill="#666">Gaussian kernel</text>
+
+<line x1="686" y1="210" x2="686" y2="238" stroke="#444" stroke-width="1.3" marker-end="url(#a)"/>
+
+<!-- Leiden -->
+<rect x="584" y="242" width="204" height="80" rx="5" fill="#FFF" stroke="#A080C0" stroke-width="0.9"/>
+<g transform="translate(590, 250)">
+  <circle cx="5" cy="5" r="3.5" fill="#E88080" opacity="0.8"/>
+  <circle cx="13" cy="10" r="3" fill="#E88080" opacity="0.6"/>
+  <circle cx="24" cy="3" r="3.5" fill="#80B8E8" opacity="0.8"/>
+  <circle cx="32" cy="9" r="3" fill="#80B8E8" opacity="0.6"/>
+  <circle cx="42" cy="5" r="3.5" fill="#90D090" opacity="0.8"/>
+  <circle cx="38" cy="13" r="3" fill="#90D090" opacity="0.6"/>
+</g>
+<text x="686" y="284" text-anchor="middle" font-size="14" font-weight="700" fill="#3A1868">Leiden Community</text>
+<text x="686" y="302" text-anchor="middle" font-size="14" font-weight="700" fill="#3A1868">Detection</text>
+
+<line x1="686" y1="324" x2="686" y2="352" stroke="#444" stroke-width="1.3" marker-end="url(#a)"/>
+
+<!-- Profile Extraction -->
+<rect x="584" y="356" width="204" height="80" rx="5" fill="#FFF" stroke="#A080C0" stroke-width="0.9"/>
+<g transform="translate(590, 364)">
+  <rect x="0" y="0" width="10" height="7" rx="0.5" fill="#D44040" opacity="0.7"/>
+  <rect x="12" y="0" width="10" height="7" rx="0.5" fill="#4080D0" opacity="0.5"/>
+  <rect x="24" y="0" width="10" height="7" rx="0.5" fill="#E8E8E8"/>
+  <rect x="36" y="0" width="10" height="7" rx="0.5" fill="#D44040" opacity="0.4"/>
+  <rect x="0" y="9" width="10" height="7" rx="0.5" fill="#4080D0" opacity="0.5"/>
+  <rect x="12" y="9" width="10" height="7" rx="0.5" fill="#D44040" opacity="0.6"/>
+  <rect x="24" y="9" width="10" height="7" rx="0.5" fill="#D44040" opacity="0.3"/>
+  <rect x="36" y="9" width="10" height="7" rx="0.5" fill="#E8E8E8"/>
+</g>
+<text x="686" y="400" text-anchor="middle" font-size="14" font-weight="700" fill="#3A1868">Profile Extraction</text>
+<text x="686" y="420" text-anchor="middle" font-size="11" fill="#666">z-scored means · sidecars</text>
+
+<text x="686" y="458" text-anchor="middle" font-size="9.5" fill="#AAA" font-style="italic">silhouette · modularity · stability</text>
+
+<!-- Transition: Community → Interpretation (serve) -->
+<line x1="802" y1="328" x2="834" y2="328" stroke="#444" stroke-width="2.2" marker-end="url(#a)"/>
+
+<!-- ============================================================== -->
+<!-- COLUMN 4: STYLE INTERPRETATION (SERVE)                          -->
+<!-- ============================================================== -->
+
+<rect x="838" y="58" width="200" height="500" rx="6" fill="#FCE4EC" stroke="#E0AAC0" stroke-width="1"/>
+<text x="938" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">Style Interpretation</text>
+
+<!-- Prompt Generation -->
+<rect x="850" y="128" width="176" height="100" rx="5" fill="#FFF" stroke="#C080A0" stroke-width="0.9"/>
+<text x="938" y="152" text-anchor="middle" font-size="14" font-weight="700" fill="#7A1848">Prompt Generation</text>
+<text x="938" y="172" text-anchor="middle" font-size="11" fill="#666">structured evidence tables</text>
+<text x="938" y="188" text-anchor="middle" font-size="11" fill="#666">from community profiles</text>
+<g transform="translate(872, 196)">
+  <rect x="0" y="0" width="130" height="22" rx="2" fill="#FFF5F8" stroke="#D8A0B8" stroke-width="0.5"/>
+  <text x="6" y="9" font-size="7" font-weight="600" fill="#7A1848">System:</text>
+  <text x="46" y="9" font-size="6.5" fill="#888">tennis analyst role</text>
+  <text x="6" y="18" font-size="7" font-weight="600" fill="#7A1848">Data:</text>
+  <text x="36" y="18" font-size="6.5" fill="#888">z-scores, features, stats</text>
+</g>
+
+<line x1="938" y1="230" x2="938" y2="248" stroke="#444" stroke-width="1.3" marker-end="url(#a)"/>
+
+<!-- LLM Report -->
+<rect x="850" y="252" width="176" height="114" rx="5" fill="#FFF" stroke="#C080A0" stroke-width="0.9"/>
+<text x="938" y="278" text-anchor="middle" font-size="14" font-weight="700" fill="#7A1848">LLM Report</text>
+<text x="938" y="296" text-anchor="middle" font-size="14" font-weight="700" fill="#7A1848">Generation</text>
+<text x="938" y="316" text-anchor="middle" font-size="11" fill="#666">evidence-grounded</text>
+<text x="938" y="330" text-anchor="middle" font-size="11" fill="#666">narrative synthesis</text>
+<!-- Brain icon -->
+<g transform="translate(904, 334)">
+  <path d="M34,4 C22,2 12,8 8,18 C4,28 6,38 12,44 C10,48 12,54 18,56 C22,58 28,58 32,56 L34,56 L36,56 C40,58 46,58 50,56 C56,54 58,48 56,44 C62,38 64,28 60,18 C56,8 46,2 34,4Z" fill="#EDE4F8" stroke="#6050A0" stroke-width="1.6"/>
+  <path d="M34,8 C33,16 35,24 34,32 C33,40 35,48 34,54" fill="none" stroke="#8070B0" stroke-width="1.2"/>
+  <path d="M14,16 C20,14 24,18 22,24" fill="none" stroke="#9888C0" stroke-width="1.0"/>
+  <path d="M10,28 C16,26 22,30 18,36" fill="none" stroke="#9888C0" stroke-width="1.0"/>
+  <path d="M14,40 C20,38 24,42 20,48" fill="none" stroke="#9888C0" stroke-width="0.8"/>
+  <path d="M54,16 C48,14 44,18 46,24" fill="none" stroke="#9888C0" stroke-width="1.0"/>
+  <path d="M58,28 C52,26 46,30 50,36" fill="none" stroke="#9888C0" stroke-width="1.0"/>
+  <path d="M54,40 C48,38 44,42 48,48" fill="none" stroke="#9888C0" stroke-width="0.8"/>
+  <circle cx="18" cy="12" r="2.5" fill="#C5E17A" opacity="0.8"/>
+  <circle cx="50" cy="12" r="2.5" fill="#C5E17A" opacity="0.8"/>
+  <circle cx="6" cy="34" r="2" fill="#C5E17A" opacity="0.6"/>
+  <circle cx="62" cy="34" r="2" fill="#C5E17A" opacity="0.6"/>
+</g>
+<text x="938" y="404" text-anchor="middle" font-size="10" font-weight="600" fill="#6050A0">LLM</text>
+
+<line x1="938" y1="416" x2="938" y2="434" stroke="#444" stroke-width="1.3" marker-end="url(#a)"/>
+
+<!-- Style Report -->
+<rect x="850" y="438" width="176" height="60" rx="5" fill="#FFF" stroke="#C080A0" stroke-width="1"/>
+<rect x="850" y="438" width="5" height="60" rx="2" fill="#C5E17A"/>
+<rect x="866" y="448" width="44" height="5" rx="1" fill="#C080A0" opacity="0.6"/>
+<rect x="866" y="458" width="100" height="3" rx="0.5" fill="#E0D0D8"/>
+<rect x="866" y="466" width="90" height="3" rx="0.5" fill="#E0D0D8"/>
+<rect x="866" y="474" width="96" height="3" rx="0.5" fill="#E0D0D8"/>
+<rect x="866" y="482" width="80" height="3" rx="0.5" fill="#E0D0D8"/>
+<text x="938" y="470" text-anchor="middle" font-size="13" font-weight="700" fill="#5A1030">Style Report</text>
+
+<text x="938" y="514" text-anchor="middle" font-size="10" fill="#AAA" font-style="italic">coach-facing report</text>
+
+<!-- ============================================================== -->
+<!-- HORIZONTAL SEPARATOR between Serve and Rally rows               -->
+<!-- ============================================================== -->
+<line x1="16" y1="568" x2="1042" y2="568" stroke="#AAA" stroke-width="1" stroke-dasharray="6,4"/>
+
+<!-- ============================================================== -->
+<!-- ROW LABEL: RALLY (left margin)                                  -->
+<!-- ============================================================== -->
+<text x="6" y="663" text-anchor="middle" font-size="12" font-weight="700" fill="#1A1A1A" transform="rotate(-90, 6, 663)">Rally</text>
+
+<!-- ============================================================== -->
+<!-- ROW 2: RALLY TRACK (y = 578..690)                               -->
+<!-- Same column x-positions, compact single-row layout              -->
+<!-- ============================================================== -->
+
+<!-- RALLY INPUT — centered vertically in row -->
+<text x="104" y="636" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">Input Rally</text>
+<text x="104" y="654" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">Shot Sequence</text>
+
+<!-- Variable-length shot sequence: colored rectangles -->
+<g transform="translate(38, 662)">
+  <rect x="0" y="0" width="20" height="16" rx="2" fill="#80B8E8" stroke="#5A8AB0" stroke-width="0.6"/>
+  <rect x="24" y="0" width="20" height="16" rx="2" fill="#E88080" stroke="#C06060" stroke-width="0.6"/>
+  <rect x="48" y="0" width="20" height="16" rx="2" fill="#90D090" stroke="#60A060" stroke-width="0.6"/>
+  <rect x="72" y="0" width="20" height="16" rx="2" fill="#E8C870" stroke="#C0A050" stroke-width="0.6"/>
+  <text x="102" y="13" font-size="14" fill="#888">…</text>
+  <rect x="112" y="0" width="20" height="16" rx="2" fill="#D0B8E0" stroke="#A088C0" stroke-width="0.6"/>
+</g>
+
+<!-- Formula -->
+<rect x="30" y="688" width="148" height="24" rx="5" fill="#FFF" stroke="#6A8AB0" stroke-width="0.8"/>
+<text x="94" y="705" text-anchor="middle" font-size="13" font-weight="700" fill="#333" font-style="italic">X ∈ ℝ</text>
+<text x="128" y="698" font-size="9" fill="#333" font-style="italic">B×T×93</text>
+
+<!-- Transition: Rally Input → Encoder -->
+<line x1="178" y1="700" x2="222" y2="700" stroke="#444" stroke-width="2.2" marker-end="url(#a)"/>
+
+<!-- RALLY ENCODER -->
+<rect x="224" y="578" width="310" height="200" rx="6" fill="#F0F4E8" stroke="#B8C898" stroke-width="1"/>
+
+<!-- Transformer tower — bottom to top, centered at x=379 -->
+
+<!-- Bottom: Positional + Token Embedding -->
+<rect x="280" y="722" width="198" height="20" rx="3" fill="#FFF" stroke="#A8B888" stroke-width="0.7"/>
+<text x="379" y="736" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A1A">Positional + Token Embed.</text>
+
+<line x1="379" y1="720" x2="379" y2="710" stroke="#444" stroke-width="1.1" marker-end="url(#a)"/>
+
+<!-- ×4 brace on left side of the repeated block -->
+<path d="M270,614 C264,614 262,618 262,624 L262,648 C262,652 264,656 270,656 C264,656 262,660 262,664 L262,690 C262,696 264,700 270,700" fill="none" stroke="#555" stroke-width="0.9"/>
+<text x="254" y="658" text-anchor="middle" font-size="12" font-weight="700" fill="#444">×4</text>
+
+<!-- Feed-Forward Network -->
+<rect x="280" y="686" width="198" height="22" rx="3" fill="#D0DDE8" stroke="#6A8AAA" stroke-width="0.8"/>
+<text x="379" y="701" text-anchor="middle" font-size="11" font-weight="700" fill="#1A3A5A">Feed-Forward Network</text>
+
+<!-- Add & Norm (between FF and Attention) -->
+<rect x="310" y="668" width="138" height="14" rx="2" fill="#F0F0F0" stroke="#CCC" stroke-width="0.5"/>
+<text x="379" y="678" text-anchor="middle" font-size="9" fill="#555">Add &amp; Norm</text>
+
+<line x1="379" y1="666" x2="379" y2="660" stroke="#444" stroke-width="1" marker-end="url(#a)"/>
+
+<!-- Multi-Head Self-Attention -->
+<rect x="280" y="636" width="198" height="22" rx="3" fill="#D4E8D0" stroke="#7AAA70" stroke-width="0.8"/>
+<text x="379" y="651" text-anchor="middle" font-size="11" font-weight="700" fill="#1A5A18">Multi-Head Self-Attention</text>
+
+<!-- Add & Norm (above Attention) -->
+<rect x="310" y="618" width="138" height="14" rx="2" fill="#F0F0F0" stroke="#CCC" stroke-width="0.5"/>
+<text x="379" y="628" text-anchor="middle" font-size="9" fill="#555">Add &amp; Norm</text>
+
+<!-- Skip connection arcs (right side, dashed) -->
+<path d="M480,698 L496,698 L496,674 L450,674" fill="none" stroke="#888" stroke-width="0.7" stroke-dasharray="2,2"/>
+<path d="M480,648 L496,648 L496,624 L450,624" fill="none" stroke="#888" stroke-width="0.7" stroke-dasharray="2,2"/>
+
+<!-- Arrow up from top Add&Norm to CLS Pooling -->
+<line x1="379" y1="616" x2="379" y2="612" stroke="#444" stroke-width="1.1" marker-end="url(#a)"/>
+
+<!-- CLS Pooling → z -->
+<rect x="330" y="604" width="98" height="14" rx="3" fill="#C5E17A" stroke="#7A9A2A" stroke-width="0.7"/>
+<text x="379" y="614" text-anchor="middle" font-size="9" font-weight="700" fill="#3A5A1A">[CLS] Pooling</text>
+
+<!-- Order Loss badge — right side -->
+<rect x="488" y="648" width="50" height="26" rx="4" fill="#C5E17A" stroke="#7A9A2A" stroke-width="1"/>
+<text x="513" y="660" text-anchor="middle" font-size="9" font-weight="700" fill="#3A5A1A">Order</text>
+<text x="513" y="672" text-anchor="middle" font-size="9" font-weight="700" fill="#3A5A1A">Loss</text>
+<line x1="488" y1="661" x2="480" y2="661" stroke="#7A9A2A" stroke-width="1.2"/>
+
+<!-- z output -->
+<line x1="379" y1="744" x2="379" y2="752" stroke="#444" stroke-width="1.1" marker-end="url(#a)"/>
+<rect x="328" y="756" width="102" height="20" rx="4" fill="#FFF" stroke="#888" stroke-width="0.7"/>
+<text x="379" y="770" text-anchor="middle" font-size="13" font-weight="700" fill="#333" font-style="italic">z ∈ ℝ²⁵⁶</text>
+
+<!-- Transition: Rally Encoder → Community -->
+<line x1="536" y1="660" x2="570" y2="660" stroke="#444" stroke-width="2.2" marker-end="url(#a)"/>
+
+<!-- RALLY COMMUNITY DISCOVERY -->
+<rect x="572" y="578" width="228" height="200" rx="6" fill="#F3E5F5" stroke="#C8A8D8" stroke-width="1"/>
+
+<!-- K-Means -->
+<rect x="584" y="612" width="204" height="40" rx="5" fill="#FFF" stroke="#A080C0" stroke-width="0.9"/>
+<text x="686" y="637" text-anchor="middle" font-size="13" font-weight="700" fill="#3A1868">K-Means (k=4)</text>
+
+<line x1="686" y1="654" x2="686" y2="674" stroke="#444" stroke-width="1.3" marker-end="url(#a)"/>
+
+<!-- Profile Extraction -->
+<rect x="584" y="678" width="204" height="58" rx="5" fill="#FFF" stroke="#A080C0" stroke-width="0.9"/>
+<g transform="translate(590, 684)">
+  <rect x="0" y="0" width="8" height="6" rx="0.5" fill="#D44040" opacity="0.7"/>
+  <rect x="10" y="0" width="8" height="6" rx="0.5" fill="#4080D0" opacity="0.5"/>
+  <rect x="20" y="0" width="8" height="6" rx="0.5" fill="#E8E8E8"/>
+  <rect x="30" y="0" width="8" height="6" rx="0.5" fill="#D44040" opacity="0.4"/>
+  <rect x="0" y="8" width="8" height="6" rx="0.5" fill="#4080D0" opacity="0.5"/>
+  <rect x="10" y="8" width="8" height="6" rx="0.5" fill="#D44040" opacity="0.6"/>
+  <rect x="20" y="8" width="8" height="6" rx="0.5" fill="#D44040" opacity="0.3"/>
+  <rect x="30" y="8" width="8" height="6" rx="0.5" fill="#E8E8E8"/>
+</g>
+<text x="686" y="714" text-anchor="middle" font-size="13" font-weight="700" fill="#3A1868">Profile Extraction</text>
+<text x="686" y="730" text-anchor="middle" font-size="11" fill="#666">z-scored means · sidecars</text>
+
+<!-- Transition: Rally Community → Interpretation -->
+<line x1="802" y1="660" x2="834" y2="660" stroke="#444" stroke-width="2.2" marker-end="url(#a)"/>
+
+<!-- RALLY STYLE INTERPRETATION -->
+<rect x="838" y="578" width="200" height="200" rx="6" fill="#FCE4EC" stroke="#E0AAC0" stroke-width="1"/>
+
+<!-- Prompt Generation (rally) -->
+<rect x="850" y="612" width="176" height="40" rx="5" fill="#FFF" stroke="#C080A0" stroke-width="0.9"/>
+<text x="938" y="637" text-anchor="middle" font-size="13" font-weight="700" fill="#7A1848">Prompt Generation</text>
+
+<line x1="938" y1="654" x2="938" y2="666" stroke="#444" stroke-width="1.3" marker-end="url(#a)"/>
+
+<!-- LLM Report (rally) -->
+<rect x="850" y="670" width="176" height="36" rx="5" fill="#FFF" stroke="#C080A0" stroke-width="0.9"/>
+<g transform="translate(856, 676)">
+  <path d="M12,2 C6,1 2,4 2,10 C2,13 4,15 6,17 C5,19 6,21 8,22 C10,23 13,23 14,22 L15,22 C16,23 18,23 20,22 C22,21 23,19 22,17 C24,15 26,13 26,10 C26,4 22,1 16,2Z" fill="#EDE4F8" stroke="#6050A0" stroke-width="0.8"/>
+  <line x1="14" y1="4" x2="14" y2="20" stroke="#8070B0" stroke-width="0.5"/>
+</g>
+<text x="938" y="692" text-anchor="middle" font-size="13" font-weight="700" fill="#7A1848">LLM Report</text>
+
+<line x1="938" y1="708" x2="938" y2="718" stroke="#444" stroke-width="1.3" marker-end="url(#a)"/>
+
+<!-- Style Report (rally) -->
+<rect x="850" y="722" width="176" height="20" rx="5" fill="#FFF" stroke="#C080A0" stroke-width="1"/>
+<rect x="850" y="722" width="5" height="20" rx="2" fill="#C5E17A"/>
+<rect x="862" y="726" width="36" height="4" rx="1" fill="#C080A0" opacity="0.6"/>
+<rect x="862" y="732" width="80" height="3" rx="0.5" fill="#E0D0D8"/>
+<rect x="862" y="738" width="70" height="3" rx="0.5" fill="#E0D0D8"/>
+<text x="938" y="738" text-anchor="middle" font-size="12" font-weight="700" fill="#5A1030">Style Report</text>
+
+</svg>
