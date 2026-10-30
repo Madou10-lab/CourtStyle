@@ -182,7 +182,7 @@ Three sources of variation remain when the pipeline is rerun from scratch. The T
 
 ## Status
 
-The released code covers the full pipeline of both branches, from preprocessing to held-out evaluation. The baseline and ablation experiments reported in the paper are being consolidated and will be added in a later release. Trained encoder weights are not included.
+The released code covers the full pipeline of both branches, from preprocessing to held-out evaluation. The trained encoders of the paper run are listed in [Pretrained encoders](#pretrained-encoders).
 
 ## Citation
 
