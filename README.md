@@ -180,6 +180,20 @@ Each module was checked against the outputs of the run reported in the paper, us
 
 Three sources of variation remain when the pipeline is rerun from scratch. The TVAE synthetic generator is not seeded, so a regenerated synthetic set differs from the one used for pre-training in the paper. GPU kernels are not bit-deterministic, so retraining on different hardware or library versions can give slightly different weights. Language-model outputs can change across model builds even at temperature 0.
 
+## Pretrained encoders
+
+The encoders of the run reported in the paper are available on [Google Drive]([DRIVE_URL_COURTSTYLE_FOLDER](https://drive.google.com/drive/folders/1P4_ZrUCEjYIMYp8pdYmfM37kdZavU4sx?usp=sharing)), with SHA-256 checksums in `SHA256SUMS.txt`.
+
+| File | Content | Place at |
+|---|---|---|
+| `serve/courtstyle_serve_encoder.pt` | serve encoder after stage 2, epoch 144 | `outputs/serve/serve_encoder_best.pt` |
+| `serve/preprocessor.pkl` | imputation and standardisation fitted on the 1,018 training records | `data/serve/processed/preprocessor.pkl` |
+| `rally/courtstyle_rally_encoder.pt` | rally encoder, epoch 195 (lowest validation loss) | `outputs/rally/models/best.pt` |
+
+The serve checkpoint was selected by validation loss plus `0.1 × (1 − effective rank / 128)`. Its file is a loadable copy of the original checkpoint, whose archive had three training-curve images appended; every checkpoint entry is byte-identical to the original.
+
+With the files in place, run the stages that follow training in `scripts/run_serve.sh` and `scripts/run_rally.sh`. On the paper's input data, discovery then reproduces the reported style of every serve record and every rally.
+
 ## Status
 
 The released code covers the full pipeline of both branches, from preprocessing to held-out evaluation. The trained encoders of the paper run are listed in [Pretrained encoders](#pretrained-encoders).
