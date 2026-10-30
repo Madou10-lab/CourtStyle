@@ -182,7 +182,7 @@ Three sources of variation remain when the pipeline is rerun from scratch. The T
 
 ## Pretrained encoders
 
-The encoders of the run reported in the paper are available on [https://drive.google.com/drive/folders/1P4_ZrUCEjYIMYp8pdYmfM37kdZavU4sx?usp=sharing]([DRIVE_URL_COURTSTYLE_FOLDER]), with SHA-256 checksums in `SHA256SUMS.txt`.
+The encoders of the run reported in the paper are available on https://drive.google.com/drive/folders/1P4_ZrUCEjYIMYp8pdYmfM37kdZavU4sx?usp=sharing([DRIVE_URL_COURTSTYLE_FOLDER]), with SHA-256 checksums in `SHA256SUMS.txt`.
 
 | File | Content | Place at |
 |---|---|---|
