@@ -201,15 +201,15 @@ The released code covers the full pipeline of both branches, from preprocessing 
 ## Citation
 
 ```bibtex
-@inproceedings{jouini2026courtstyle,
-  title     = {{CourtStyle}: Unified Self-Supervised Framework for Tennis Playing Style Discovery},
+@article{CourtStyle,
   author    = {Jouini, Ahmed and Chaieb-Chakchouk, Faten and Loth, Alex},
-  booktitle = {Proceedings of the 30th International Conference on Knowledge-Based
-               and Intelligent Information \& Engineering Systems (KES)},
-  series    = {Procedia Computer Science},
-  publisher = {Elsevier},
+  title     = {{CourtStyle}: Unified Self-Supervised Framework for Tennis Playing Style Discovery},
+  journal   = {Procedia Computer Science},
+  volume    = {292},
+  pages     = {985--994},
   year      = {2026},
-  note      = {To appear}
+  publisher = {Elsevier},
+  note      = {Proceedings of the 30th International Conference on Knowledge-Based and Intelligent Information \& Engineering Systems (KES 2026)}
 }
 ```
 
