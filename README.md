@@ -6,12 +6,11 @@ This repository contains the reference implementation of the KES 2026 paper.
 
 ## Publication
 
-**[CourtStyle: Unified Self-Supervised Framework for Tennis Playing Style Discovery](https://www.sciencedirect.com/browse/journals-and-books)**
-Ahmed Jouini, Faten Chaieb-Chakchouk, Alex Loth
+**[CourtStyle: Unified Self-Supervised Framework for Tennis Playing Style Discovery](https://doi.org/10.1016/j.procs.2026.09.173)**\
+Ahmed Jouini, Faten Chaieb-Chakchouk, Alex Loth\
+*Procedia Computer Science*, vol. 292, pp. 985–994, Elsevier, 2026. DOI: [10.1016/j.procs.2026.09.173](https://doi.org/10.1016/j.procs.2026.09.173)
 
-Presented at the 30th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems (KES 2026). The proceedings are scheduled for publication in Elsevier's *Procedia Computer Science* and will be available through ScienceDirect.
-
-> Publication metadata will be updated when the final *Procedia Computer Science* record and DOI become available.
+Presented at the 30th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems (KES 2026). The article is open access on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1877050926033260).
 
 ## Overview
 
@@ -182,7 +181,7 @@ Three sources of variation remain when the pipeline is rerun from scratch. The T
 
 ## Pretrained encoders
 
-The encoders of the run reported in the paper are available on https://drive.google.com/drive/folders/1P4_ZrUCEjYIMYp8pdYmfM37kdZavU4sx?usp=sharing([DRIVE_URL_COURTSTYLE_FOLDER]), with SHA-256 checksums in `SHA256SUMS.txt`.
+The encoders of the run reported in the paper are available on [Google Drive](https://drive.google.com/drive/folders/1P4_ZrUCEjYIMYp8pdYmfM37kdZavU4sx?usp=sharing), with SHA-256 checksums in `SHA256SUMS.txt`.
 
 | File | Content | Place at |
 |---|---|---|
@@ -209,11 +208,12 @@ The released code covers the full pipeline of both branches, from preprocessing 
   pages     = {985--994},
   year      = {2026},
   publisher = {Elsevier},
-  note      = {Proceedings of the 30th International Conference on Knowledge-Based and Intelligent Information \& Engineering Systems (KES 2026)}
+  issn      = {1877-0509},
+  doi       = {10.1016/j.procs.2026.09.173},
+  url       = {https://www.sciencedirect.com/science/article/pii/S1877050926033260},
+  note      = {30th International Conference on Knowledge-Based and Intelligent Information \& Engineering Systems (KES 2026)}
 }
 ```
-
-Publication metadata will be updated when the final *Procedia Computer Science* record and DOI become available.
 
 ## Acknowledgements
 
