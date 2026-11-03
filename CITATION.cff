@@ -25,7 +25,7 @@ keywords:
   - playing style discovery
   - large language models
 preferred-citation:
-  type: conference-paper
+  type: article
   title: "CourtStyle: Unified Self-Supervised Framework for Tennis Playing Style Discovery"
   authors:
     - family-names: Jouini
@@ -34,12 +34,17 @@ preferred-citation:
       given-names: Faten
     - family-names: Loth
       given-names: Alex
-  collection-title: >-
-    Proceedings of the 30th International Conference on Knowledge-Based and
-    Intelligent Information & Engineering Systems (KES 2026)
+  journal: "Procedia Computer Science"
+  volume: 292
+  start: 985
+  end: 994
+  year: 2026
   publisher:
     name: Elsevier
-  year: 2026
-  notes: >-
-    Scheduled for publication in Procedia Computer Science. Volume, pages and DOI
-    will be added when the final record becomes available.
+  issn: "1877-0509"
+  doi: "10.1016/j.procs.2026.09.173"
+  url: "https://www.sciencedirect.com/science/article/pii/S1877050926033260"
+  conference:
+    name: >-
+      30th International Conference on Knowledge-Based and Intelligent
+      Information & Engineering Systems (KES 2026)
